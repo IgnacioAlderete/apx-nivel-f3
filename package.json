@@ -1,0 +1,15 @@
+{ 
+  "name": "desafio-maqueta",
+  "version": "1.2.0",
+  "description": "Descripción de mi proyecto",
+  "scripts": {
+        "dev": "parcel serve ./src/index.html",
+        "build": "parcel build ./index.html --dist-dir build --public-url {desafio-maqueta}",
+        "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
+
+

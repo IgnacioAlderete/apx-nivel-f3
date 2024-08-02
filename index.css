@@ -1,0 +1,262 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+.body{
+    width: 100%;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+a, h3{
+    margin: 0;
+    padding:0;
+    color:#141414;
+    text-decoration: none;
+}
+.header{
+    padding:18px 18px 48px 18px;
+    display: flex;
+    flex-direction: column;
+    gap:98px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__logo{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    padding: 10px 28px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    width:fit-content;
+
+}
+
+.container__menu{
+    display: none;
+    font-weight: bold;
+    
+}
+
+
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:88px;
+    width: 100%;
+    height: 410px;
+}
+h1{
+    font-size: 48px;
+    line-height: 48px;
+}
+@media (min-width:860px){
+    header {
+        padding: 56px 84px;
+        gap: 71px;
+    }
+    .container__menu{
+        display: flex;
+        gap:72px;
+        list-style-type: none;
+    }
+    .burguer{
+        display: none;
+    }
+    .welcome{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        height: 392px;
+    }
+    .container__menu li a{
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Roboto";
+    }
+}
+.about-yo{
+    background-color:#141414;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 56px 32px;
+    gap: 48px;
+}
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 532px;
+    gap:50px;
+}
+.about-yo h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-yo h2, .about-yo p{
+    color:white;
+    
+}
+
+/*service*/
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 70px 0;
+    gap: 42px;
+}
+
+.services h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.services__logo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:88px;
+    align-items: center;
+}
+
+.services__log{
+    width: 270px;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    text-align: center;
+}
+
+.me{
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px;
+    gap:36px;
+}
+
+.me h3{
+    color:white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.me__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 60px;
+}
+
+.me__elements{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.me__element{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.me__element label{
+    color: white;
+    font-size: 14px;
+}
+
+.me__element input, .me__element textarea{
+    height: 45px;
+    padding: 8px 12px;
+}
+
+.me__submit{
+    background-color: #FFD953;
+    border-radius: 4px;
+    height: 45px;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (min-width: 860px){
+    .me__container{
+        width: 330px;
+    }
+}
+@media (min-width:860px){
+    .me{
+        flex-direction: row;
+        gap:72px;
+        align-items: start;
+        justify-items: center;
+    }
+}
+
+
+/*redes*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 120px 16px;
+    gap:120px;
+    background: rgb(255,255,255);
+        background: linear-gradient(180deg, rga(255,255,255,1) 0% rgba(219,219,219,1) 100%);
+}
+
+@media (min-width: 768px){
+    footer {
+        flex-direction: row;
+        padding: 120px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+.compañia{
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+    font-size: 14px;
+}
+.red{
+    display: flex;
+    flex-direction: column;
+    gap:27px;
+}
+
+.red__network{
+    display: flex;
+    gap: 8px;
+}
+
+.red__network p{
+    align-self: center;
+}
